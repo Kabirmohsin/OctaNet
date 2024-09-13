@@ -1,0 +1,187 @@
+HTML-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kabbu Yoga Studio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">Kabbu Yoga Studio</div>
+            <ul class="nav-links">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Welcome to Kabbu Yoga Studio</h1>
+            <p>Find Your Inner Peace and Balance</p>
+            <a href="#classes" class="btn">Explore Our Classes</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <h2>About Us</h2>
+        <p>Kabbu Yoga Studio is a tranquil oasis in the city, dedicated to helping individuals find their inner peace and improve their well-being through yoga. Our expert instructors guide you on a journey of self-discovery, relaxation, and fitness. We offer classes for all levels, from beginners to advanced practitioners.</p>
+    </section>
+
+    <!-- Classes Section -->
+    <section id="classes" class="section classes">
+        <h2>Our Classes</h2>
+        <div class="class-list">
+            <div class="class-item">
+                <img src="C:\Users\Kabir Mohsin\Downloads\04.jpg" alt="Hatha Yoga">
+                <h3>Hatha Yoga</h3>
+                <p>A gentle introduction to the most basic yoga postures, perfect for beginners.</p>
+            </div>
+            <div class="class-item">
+                <img src="C:\Users\Kabir Mohsin\Downloads\istockphoto-1470783559-612x612.jpg" alt="Vinyasa Yoga">
+                <h3>Vinyasa Yoga</h3>
+                <p>A dynamic flow of yoga postures that helps build strength and flexibility.</p>
+            </div>
+            <div class="class-item">
+                <img src="C:\Users\Kabir Mohsin\Downloads\Butterfly-Pose-The-benefits-of-yin-yoga.webp" alt="Yin Yoga">
+                <h3>Yin Yoga</h3>
+                <p>A slow-paced style of yoga with poses held for longer periods, focusing on deep relaxation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Kabbu Yoga Studio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
+CSS-
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #efeded;
+    color: #596b0f;
+}
+
+.header {
+    background-image: url('C:\Users\Kabir Mohsin\Downloads\pexels-chevanon-317155.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: rgb(252, 99, 99);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #76b852;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about, .classes, .contact {
+    background-color: #fff;
+}
+
+.class-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.class-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.class-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
